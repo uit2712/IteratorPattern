@@ -1,4 +1,6 @@
 ﻿using System;
+using BinaryTreeExample.Aggregates;
+using BinaryTreeExample.ConcreteAggregates;
 using BinaryTreeExample.ConcreteIterators;
 using BinaryTreeExample.Entities;
 using BinaryTreeExample.Iterators;
@@ -8,6 +10,12 @@ namespace BinaryTreeExample
     class Program
     {
         static void Main(string[] args)
+        {
+            WithoutUsingAggregates();
+            //UseAggregates();
+        }
+
+        static void WithoutUsingAggregates()
         {
             Tree tree = new Tree();
             tree.InitData();
@@ -19,6 +27,20 @@ namespace BinaryTreeExample
             Print(preorderIterator);
             Print(inorderIterator);
             Print(postorderIterator);
+        }
+
+        static void UseAggregates()
+        {
+            AbstractTree inorderTree = new InorderTree();
+            inorderTree.InitData();
+            AbstractTree preorderTree = new PreorderTree();
+            preorderTree.InitData();
+            AbstractTree postorderTree = new PostorderTree();
+            postorderTree.InitData();
+
+            Print(inorderTree.CreateIterator());
+            Print(preorderTree.CreateIterator());
+            Print(postorderTree.CreateIterator());
         }
 
         static void Print(BTIterator iterator)

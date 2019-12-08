@@ -44,6 +44,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Aggregates\AbstractTree.cs" />
+    <Compile Include="ConcreteAggregates\InorderTree.cs" />
+    <Compile Include="ConcreteAggregates\PostorderTree.cs" />
+    <Compile Include="ConcreteAggregates\PreorderTree.cs" />
     <Compile Include="ConcreteIterators\InorderIterator.cs" />
     <Compile Include="ConcreteIterators\PostorderIterator.cs" />
     <Compile Include="ConcreteIterators\PreorderIterator.cs" />
