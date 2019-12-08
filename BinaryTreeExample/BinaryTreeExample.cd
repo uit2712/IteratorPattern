@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="BinaryTreeExample.Iterators.BTIterator">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AgAAACAIAAAAAQAAAAAAAAQAABBAAAAAAAAABQAAAAA=</HashCode>
+      <FileName>Iterators\BTIterator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BinaryTreeExample.ConcreteIterators.InorderIterator">
+    <Position X="0.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAACAIAAAAAQAAAAAAAAAAAABAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ConcreteIterators\InorderIterator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BinaryTreeExample.ConcreteIterators.PostorderIterator">
+    <Position X="2.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAACAIAAAAAQAAAAAAAAAAAABAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ConcreteIterators\PostorderIterator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BinaryTreeExample.ConcreteIterators.PreorderIterator">
+    <Position X="4" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAACAIAAAAAQAAAAAAAAAAAABAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ConcreteIterators\PreorderIterator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BinaryTreeExample.Aggregates.AbstractTree">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Aggregates\AbstractTree.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BinaryTreeExample.ConcreteAggregates.InorderTree">
+    <Position X="5.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ConcreteAggregates\InorderTree.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BinaryTreeExample.ConcreteAggregates.PostorderTree">
+    <Position X="7.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ConcreteAggregates\PostorderTree.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BinaryTreeExample.ConcreteAggregates.PreorderTree">
+    <Position X="9.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ConcreteAggregates\PreorderTree.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
