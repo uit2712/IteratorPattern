@@ -11,11 +11,11 @@ namespace BinaryTreeExample
     {
         static void Main(string[] args)
         {
-            WithoutUsingAggregates();
-            //UseAggregates();
+            UsingIteratorInAggregates();
+            //UsingIteratorOutOfAggregates();
         }
 
-        static void WithoutUsingAggregates()
+        static void UsingIteratorInAggregates()
         {
             Tree tree = new Tree();
             tree.InitData();
@@ -29,7 +29,7 @@ namespace BinaryTreeExample
             Print(postorderIterator);
         }
 
-        static void UseAggregates()
+        static void UsingIteratorOutOfAggregates()
         {
             AbstractTree inorderTree = new InorderTree();
             inorderTree.InitData();
