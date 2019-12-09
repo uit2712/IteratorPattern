@@ -54,6 +54,7 @@
     <Compile Include="Entities\Node.cs" />
     <Compile Include="Entities\Tree.cs" />
     <Compile Include="Iterators\BTIterator.cs" />
+    <Compile Include="Iterators\IIterator.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

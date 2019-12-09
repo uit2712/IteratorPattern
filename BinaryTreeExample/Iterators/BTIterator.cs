@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace BinaryTreeExample.Iterators
 {
-    abstract class BTIterator
+    abstract class BTIterator : IIterator<Node>
     {
         public string Name { get; set; }
         protected List<Node> _items = new List<Node>();
@@ -21,9 +21,28 @@ namespace BinaryTreeExample.Iterators
         }
 
         protected abstract void Loop(Node node);
-        public abstract void First();
-        public abstract void Next();
-        public abstract bool IsDone();
-        public abstract Node CurrentItem();
+
+        public Node CurrentItem()
+        {
+            if (IsDone())
+                return null;
+
+            return _items[_current];
+        }
+
+        public void First()
+        {
+            _current = 0;
+        }
+
+        public bool IsDone()
+        {
+            return _current < 0 || _current >= _items.Count;
+        }
+
+        public void Next()
+        {
+            _current++;
+        }
     }
 }

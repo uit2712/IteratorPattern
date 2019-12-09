@@ -15,7 +15,7 @@ namespace BinaryTreeExample
             //UsingIteratorOutOfAggregates();
         }
 
-        static void UsingIteratorInAggregates()
+        static void UsingIteratorOutOfAggregates()
         {
             Tree tree = new Tree();
             tree.InitData();
@@ -29,7 +29,7 @@ namespace BinaryTreeExample
             Print(postorderIterator);
         }
 
-        static void UsingIteratorOutOfAggregates()
+        static void UsingIteratorInAggregates()
         {
             AbstractTree inorderTree = new InorderTree();
             inorderTree.InitData();
